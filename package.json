@@ -1,0 +1,44 @@
+{
+  "name": "pull-from-api",
+  "version": "0.0.0",
+  "description": "Create streams from high latency async functions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preversion": "npm run lint && npm test",
+    "postversion": "git push && git push --tags && npm publish",
+    "lint": "eslint .",
+    "test": "node test/index.js | tap-spec"
+  },
+  "dependencies": {
+    "event-manifest": "^0.1.0",
+    "pull-async": "^1.0.0",
+    "pull-cat": "^1.1.11",
+    "pull-catch": "^1.0.0",
+    "pull-stream": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-minlint": "^2.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/pull-from-api.git"
+  },
+  "keywords": [
+    "pull-stream",
+    "pull",
+    "stream",
+    "async"
+  ],
+  "author": "nichoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/pull-from-api/issues"
+  },
+  "homepage": "https://github.com/nichoth/pull-from-api#readme"
+}
