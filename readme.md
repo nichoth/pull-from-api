@@ -1,3 +1,10 @@
+# pull from api
+
+Return a stream that emits three events: `start`, `resolve`, and either `data` or `error`.
+
+## example
+
+```js
 var test = require('tape')
 var S = require('pull-stream')
 var fromFn = require('../')
@@ -64,4 +71,5 @@ test('error event', function (t) {
         })
     )
 })
+```
 
