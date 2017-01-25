@@ -1,7 +1,7 @@
 {
   "name": "pull-from-api",
   "version": "0.0.0",
-  "description": "Create streams from high latency async functions",
+  "description": "Create streams for high latency async functions",
   "main": "index.js",
   "directories": {
     "test": "test"
